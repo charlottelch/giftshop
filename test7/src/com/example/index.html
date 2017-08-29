@@ -15,7 +15,9 @@ xmlhttp.onreadystatechange = function() {
         var myObj = JSON.parse(this.responseText);
         document.getElementById("demo").innerHTML = "this is our gifts.json <br>";
         for (var i=0; i < myObj.gifts.length; i++) {
-            document.getElementById("demo").innerHTML += myObj.gifts[i].name + ", price:" + myObj.gifts[i].price + "<br>";
+
+            document.getElementById("demo").innerHTML += myObj.gifts[i].name + ", price:" + myObj.gifts[i].price +
+             '<img src="' + myObj.gifts[i].img + '" width="525" height="400">' + "<br>";
         }
     }
 };

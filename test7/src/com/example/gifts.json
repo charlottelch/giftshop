@@ -1,8 +1,8 @@
 {
   "gifts":[
-         {"name":"gift1","price":50,"size":"10cm*10cm","color":"red"},
-         {"name":"gift2","price":20,"size":"20cm*10cm","color":"green"},
-         {"name":"gift3","price":30,"size":"30cm*10cm","color":"yellow"},
-         {"name":"gift4","price":40,"size":"40cm*10cm","color":"gray"}
+         {"name":"gift1","price":50,"size":"10cm*10cm","color":"red", "img":"https://charlottelch.github.io/webdesign/fashion/images/14hxhdjgz30.jpg"},
+         {"name":"gift2","price":20,"size":"20cm*10cm","color":"green", "img":"https://charlottelch.github.io/webdesign/fashion/images/14hxhdjgz30.jpg"},
+         {"name":"gift3","price":30,"size":"30cm*10cm","color":"yellow", "img":"https://charlottelch.github.io/webdesign/fashion/images/14hxhdjgz30.jpg"},
+         {"name":"gift4","price":40,"size":"40cm*10cm","color":"gray", "img":"https://charlottelch.github.io/webdesign/fashion/images/14hxhdjgz30.jpg"}
          ]
 }
