@@ -22,14 +22,21 @@ public class Test {
     static class MyHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange t) throws IOException {
-            String response = "{\n" +
-                    "  \"gifts\":[\n" +
-                    "         {\"name\":\"gift1\",\"price\":10,\"size\":\"10cm*10cm\",\"color\":\"red\"},\n" +
-                    "         {\"name\":\"gift2\",\"price\":20,\"size\":\"20cm*10cm\",\"color\":\"green\"},\n" +
-                    "         {\"name\":\"gift3\",\"price\":30,\"size\":\"30cm*10cm\",\"color\":\"yellow\"}\n" +
-                    "         ]\n" +
-                    "}";
-
+            String response = null;
+//            String response = "{\n" +
+//                    "  \"gifts\":[\n" +
+//                    "         {\"name\":\"gift1\",\"price\":10,\"size\":\"10cm*10cm\",\"color\":\"red\"},\n" +
+//                    "         {\"name\":\"gift2\",\"price\":20,\"size\":\"20cm*10cm\",\"color\":\"green\"},\n" +
+//                    "         {\"name\":\"gift3\",\"price\":30,\"size\":\"30cm*10cm\",\"color\":\"yellow\"}\n" +
+//                    "         ]\n" +
+//                    "}";
+            try {
+                String content = new Scanner(new File("src/com/example/gifts.json")).useDelimiter("\\Z").next();
+                response = content;
+                //            System.out.println(content);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             t.sendResponseHeaders(200, response.length());
             OutputStream os = t.getResponseBody();
             os.write(response.getBytes());

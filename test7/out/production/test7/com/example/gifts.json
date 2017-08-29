@@ -1,0 +1,7 @@
+{
+  "gifts":[
+         {"name":"gift1","price":50,"size":"10cm*10cm","color":"red"},
+         {"name":"gift2","price":20,"size":"20cm*10cm","color":"green"},
+         {"name":"gift3","price":30,"size":"30cm*10cm","color":"yellow"}
+         ]
+}
